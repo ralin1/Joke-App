@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		9609C5C128B27F7A00571BB1 /* JokeAppTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5C028B27F7A00571BB1 /* JokeAppTestApp.swift */; };
-		9609C5C328B27F7A00571BB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5C228B27F7A00571BB1 /* ContentView.swift */; };
+		9609C5C328B27F7A00571BB1 /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5C228B27F7A00571BB1 /* JokeView.swift */; };
 		9609C5C528B27F7A00571BB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9609C5C428B27F7A00571BB1 /* Assets.xcassets */; };
 		9609C5C828B27F7A00571BB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9609C5C728B27F7A00571BB1 /* Preview Assets.xcassets */; };
-		9609C5D328B27F7A00571BB1 /* JokeAppTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5D228B27F7A00571BB1 /* JokeAppTestTests.swift */; };
+		9609C5D328B27F7A00571BB1 /* JokePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5D228B27F7A00571BB1 /* JokePresenterTests.swift */; };
 		9609C5DD28B27F7A00571BB1 /* JokeAppTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5DC28B27F7A00571BB1 /* JokeAppTestUITests.swift */; };
 		9609C5DF28B27F7A00571BB1 /* JokeAppTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5DE28B27F7A00571BB1 /* JokeAppTestUITestsLaunchTests.swift */; };
+		9609C5EC28B281F300571BB1 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5EB28B281F300571BB1 /* ApiService.swift */; };
+		9609C5EE28B281FD00571BB1 /* TypeJoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5ED28B281FD00571BB1 /* TypeJoke.swift */; };
+		9609C5F028B2820400571BB1 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5EF28B2820400571BB1 /* Joke.swift */; };
+		9609C5F628B28C4300571BB1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9609C5F528B28C4300571BB1 /* Info.plist */; };
+		9609C5F828B294B200571BB1 /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5F728B294B200571BB1 /* AppMenu.swift */; };
+		9609C5FA28B2A4E700571BB1 /* JokePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5F928B2A4E700571BB1 /* JokePresenter.swift */; };
+		9609C5FC28B2A4F500571BB1 /* JokeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5FB28B2A4F500571BB1 /* JokeInteractor.swift */; };
+		9609C5FE28B2A50600571BB1 /* JokeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C5FD28B2A50600571BB1 /* JokeConfigurator.swift */; };
+		9609C60128B2AF2700571BB1 /* JokeDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C60028B2AF2600571BB1 /* JokeDataStore.swift */; };
+		9609C60428B2B5F700571BB1 /* JokeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C60328B2B5F700571BB1 /* JokeViewTests.swift */; };
+		9609C60628B2B98F00571BB1 /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609C60528B2B98F00571BB1 /* ApiServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +47,26 @@
 /* Begin PBXFileReference section */
 		9609C5BD28B27F7A00571BB1 /* JokeAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9609C5C028B27F7A00571BB1 /* JokeAppTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAppTestApp.swift; sourceTree = "<group>"; };
-		9609C5C228B27F7A00571BB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9609C5C228B27F7A00571BB1 /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
 		9609C5C428B27F7A00571BB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9609C5C728B27F7A00571BB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9609C5C928B27F7A00571BB1 /* JokeAppTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JokeAppTest.entitlements; sourceTree = "<group>"; };
 		9609C5CE28B27F7A00571BB1 /* JokeAppTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeAppTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9609C5D228B27F7A00571BB1 /* JokeAppTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAppTestTests.swift; sourceTree = "<group>"; };
+		9609C5D228B27F7A00571BB1 /* JokePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresenterTests.swift; sourceTree = "<group>"; };
 		9609C5D828B27F7A00571BB1 /* JokeAppTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeAppTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9609C5DC28B27F7A00571BB1 /* JokeAppTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAppTestUITests.swift; sourceTree = "<group>"; };
 		9609C5DE28B27F7A00571BB1 /* JokeAppTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAppTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9609C5EB28B281F300571BB1 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		9609C5ED28B281FD00571BB1 /* TypeJoke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeJoke.swift; sourceTree = "<group>"; };
+		9609C5EF28B2820400571BB1 /* Joke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		9609C5F528B28C4300571BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = JokeAppTest/Info.plist; sourceTree = SOURCE_ROOT; };
+		9609C5F728B294B200571BB1 /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		9609C5F928B2A4E700571BB1 /* JokePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresenter.swift; sourceTree = "<group>"; };
+		9609C5FB28B2A4F500571BB1 /* JokeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeInteractor.swift; sourceTree = "<group>"; };
+		9609C5FD28B2A50600571BB1 /* JokeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeConfigurator.swift; sourceTree = "<group>"; };
+		9609C60028B2AF2600571BB1 /* JokeDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDataStore.swift; sourceTree = "<group>"; };
+		9609C60328B2B5F700571BB1 /* JokeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewTests.swift; sourceTree = "<group>"; };
+		9609C60528B2B98F00571BB1 /* ApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +117,11 @@
 		9609C5BF28B27F7A00571BB1 /* JokeAppTest */ = {
 			isa = PBXGroup;
 			children = (
+				9609C5F528B28C4300571BB1 /* Info.plist */,
 				9609C5C028B27F7A00571BB1 /* JokeAppTestApp.swift */,
-				9609C5C228B27F7A00571BB1 /* ContentView.swift */,
+				9609C5FF28B2A76200571BB1 /* MainBarMacOS */,
+				9609C5F228B2821700571BB1 /* Service */,
+				9609C5F128B2820900571BB1 /* Models */,
 				9609C5C428B27F7A00571BB1 /* Assets.xcassets */,
 				9609C5C928B27F7A00571BB1 /* JokeAppTest.entitlements */,
 				9609C5C628B27F7A00571BB1 /* Preview Content */,
@@ -115,7 +140,8 @@
 		9609C5D128B27F7A00571BB1 /* JokeAppTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				9609C5D228B27F7A00571BB1 /* JokeAppTestTests.swift */,
+				9609C60528B2B98F00571BB1 /* ApiServiceTests.swift */,
+				9609C60228B2B2E400571BB1 /* MainTests */,
 			);
 			path = JokeAppTestTests;
 			sourceTree = "<group>";
@@ -127,6 +153,53 @@
 				9609C5DE28B27F7A00571BB1 /* JokeAppTestUITestsLaunchTests.swift */,
 			);
 			path = JokeAppTestUITests;
+			sourceTree = "<group>";
+		};
+		9609C5F128B2820900571BB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9609C5EF28B2820400571BB1 /* Joke.swift */,
+				9609C5ED28B281FD00571BB1 /* TypeJoke.swift */,
+				9609C60028B2AF2600571BB1 /* JokeDataStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9609C5F228B2821700571BB1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9609C5EB28B281F300571BB1 /* ApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9609C5F328B2831F00571BB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9609C5C228B27F7A00571BB1 /* JokeView.swift */,
+				9609C5F728B294B200571BB1 /* AppMenu.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9609C5FF28B2A76200571BB1 /* MainBarMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				9609C5F328B2831F00571BB1 /* View */,
+				9609C5F928B2A4E700571BB1 /* JokePresenter.swift */,
+				9609C5FB28B2A4F500571BB1 /* JokeInteractor.swift */,
+				9609C5FD28B2A50600571BB1 /* JokeConfigurator.swift */,
+			);
+			path = MainBarMacOS;
+			sourceTree = "<group>";
+		};
+		9609C60228B2B2E400571BB1 /* MainTests */ = {
+			isa = PBXGroup;
+			children = (
+				9609C5D228B27F7A00571BB1 /* JokePresenterTests.swift */,
+				9609C60328B2B5F700571BB1 /* JokeViewTests.swift */,
+			);
+			path = MainTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9609C5F628B28C4300571BB1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +333,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9609C5C328B27F7A00571BB1 /* ContentView.swift in Sources */,
+				9609C5F828B294B200571BB1 /* AppMenu.swift in Sources */,
+				9609C5FA28B2A4E700571BB1 /* JokePresenter.swift in Sources */,
+				9609C5EE28B281FD00571BB1 /* TypeJoke.swift in Sources */,
+				9609C5FC28B2A4F500571BB1 /* JokeInteractor.swift in Sources */,
+				9609C5FE28B2A50600571BB1 /* JokeConfigurator.swift in Sources */,
+				9609C60128B2AF2700571BB1 /* JokeDataStore.swift in Sources */,
+				9609C5F028B2820400571BB1 /* Joke.swift in Sources */,
+				9609C5C328B27F7A00571BB1 /* JokeView.swift in Sources */,
 				9609C5C128B27F7A00571BB1 /* JokeAppTestApp.swift in Sources */,
+				9609C5EC28B281F300571BB1 /* ApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +350,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9609C5D328B27F7A00571BB1 /* JokeAppTestTests.swift in Sources */,
+				9609C5D328B27F7A00571BB1 /* JokePresenterTests.swift in Sources */,
+				9609C60428B2B5F700571BB1 /* JokeViewTests.swift in Sources */,
+				9609C60628B2B98F00571BB1 /* ApiServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +508,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JokeAppTest/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +536,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JokeAppTest/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
